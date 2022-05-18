@@ -1,1 +1,0 @@
-org.springframework.context.ApplicationContextInitializer=com.penglecode.samples.springboot.processor.MdsComponentsRegistrar

@@ -10,13 +10,16 @@ logging:
 
 #Servlet容器配置
 server:
-    port: 8123
+    port: 8282
     shutdown: graceful
 
 #SpringBoot应用的名称
 spring:
     application:
         name: samples-springboot
+    autoconfigure:
+        exclude:
+            - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
     #配置文件激活配置
     profiles:
         active: dev

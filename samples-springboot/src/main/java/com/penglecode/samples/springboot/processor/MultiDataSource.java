@@ -12,7 +12,7 @@ import java.lang.annotation.*;
 @Documented
 @Target(ElementType.TYPE)
 @Retention(RetentionPolicy.RUNTIME)
-@Import(MdsComponentsRegistrar.class)
+@Import({MdsComponentsRegistrar.class, MdsComponentRegistryConfiguration.class})
 public @interface MultiDataSource {
 
     String[] value();
